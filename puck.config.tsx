@@ -1,7 +1,15 @@
 import type { Config } from "@measured/puck";
+import { Columns, ColumnsProps } from "./components/columns";
+import { Container, ContainerProps } from "./components/container";
+import { Flex, FlexProps } from "./components/flex";
+import { Text, TextProps } from "./components/text";
 
 type Props = {
   HeadingBlock: { title: string };
+  Container: ContainerProps;
+  Text: TextProps;
+  Flex: FlexProps;
+  Columns: ColumnsProps;
 };
 
 export const config: Config<Props> = {
@@ -19,6 +27,10 @@ export const config: Config<Props> = {
         </div>
       ),
     },
+    Container: Container,
+    Text: Text,
+    Flex: Flex,
+    Columns: Columns,
   },
 };
 
