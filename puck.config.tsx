@@ -2,6 +2,7 @@ import type { Config } from "@measured/puck";
 import { Columns, ColumnsProps } from "./components/columns";
 import { Container, ContainerProps } from "./components/container";
 import { Flex, FlexProps } from "./components/flex";
+import { Repeater, RepeaterProps } from "./components/repeater";
 import { Text, TextProps } from "./components/text";
 
 type Props = {
@@ -10,6 +11,7 @@ type Props = {
   Text: TextProps;
   Flex: FlexProps;
   Columns: ColumnsProps;
+  Repeater: RepeaterProps;
 };
 
 export const config: Config<Props> = {
@@ -31,6 +33,7 @@ export const config: Config<Props> = {
     Text: Text,
     Flex: Flex,
     Columns: Columns,
+    Repeater: Repeater,
   },
 };
 

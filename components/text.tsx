@@ -1,6 +1,6 @@
 import { ComponentConfig, FieldLabel } from "@measured/puck";
-import { NotRenderedMessage } from "../lib/NotRenderedMessage";
 import GradientColorPicker from "../lib/custom-fields/GradientColorPicker";
+import { NotRenderedMessage } from "./NotRenderedMessage";
 
 export type TextProps = {
   text: string;
